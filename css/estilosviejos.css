@@ -1,0 +1,256 @@
+/* generales */
+body {
+	
+	background-image:url("imagenes/fondo.jpg"); 
+}
+
+.enLinea{display: inline-block;}
+
+.verde {
+	color: #005c1d;/*rgba(0, 92, 29, 0)*/
+}
+.verdolaga{
+	color: #7da17e;/*rgba(125, 161, 126, 0)*/
+}
+
+@media (max-width: 576px) {
+	body {
+		background-image:none; 
+		}
+	.titulo,.subtitulo {
+		display:none
+	}
+}
+
+#carouselExampleIndicators{
+	padding: 50px;
+    margin-left: 120px;
+}
+
+/* header */
+.logo {
+    width: 350px;
+    height: 150px;
+    margin: 8px 10px 10px 10px;
+}
+h1, .titulo{
+	font-size: 80px;
+	text-align: center;
+	background-color: rgba(255,166,00,0.5);
+	margin-left: 400px;
+	margin-top: -140px;
+	width: 800px;
+	height: 120px;
+	border: 5px solid #7b8a00;
+	border-radius: 20px;
+}
+
+h2, .subtitulo{
+	font-size: 60px;
+	text-align: center;
+	background-color: rgba(238,238,238,0.8);
+	margin-left: 600px;	
+	margin-top: 0px;
+	width: 300px;
+	border: 5px solid #7b8a00;
+	border-radius: 20px;
+}
+
+h1,h2,.titulo,.subtitulo{
+	
+	font-family: 'Pinyon Script', cursive;
+	font-weight: bold;
+}
+
+/*Grilla */
+
+  /*Empieza Menu*/              
+li{
+     position:relative;
+     height:55px;
+}
+li a{
+    text-decoration:none;
+    display:inline-block;
+    padding:5px 10px;
+    width:160px;
+    height:40px;
+    border:2px solid #005c1d;
+    border-radius: 10px;
+    color:#005c1d;
+    background-color:rgba(145,188,219,0.5);
+}
+li a:hover{
+    color:#7da17e;
+    background-color:#ffa600;
+}
+nav li ul{
+    display:none;
+    position:absolute;
+    list-style-type: none;
+    top:0px;
+    left:150px;
+}
+nav li:hover ul{display:block;}
+/*Termina  Menu*/ 
+
+ .menu, ul{
+	background-color: rgba(145,188,219,0.5);
+	font-family: 'Homemade Apple', cursive;
+	font-size: 24px; 
+	font-weight: 900;
+	text-align: center;  
+  	letter-spacing: 0px;
+  	word-spacing: 0px; 
+	list-style-type: none;
+	margin-left: 50px;
+	width: 180px;
+	height: 450px;
+	padding:20px 50px 20px 10px;
+	border: 5px solid #7b8a00;
+	border-radius: 20px;
+	display: inline-block;
+ }
+
+
+
+.tabla{
+	background-color: rgba(238,238,238,0.8);
+	display: inline-block;
+}		
+
+.imgppal{
+	height: 120px;
+}
+
+form{
+	background-color: rgba(238,238,238,0.8);
+}
+
+.contacto{
+	display: inline-block;
+	margin-left: 310px;
+	margin-top: 350px;
+}
+
+/*Detalles*/  
+.detalles{
+	width:1000px;
+   	height:450px;
+	display: inline-flex;
+	flex-direction: column;
+}
+
+/*Grillasss*/  
+.grillasup{
+	height:150px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center;
+}
+
+.grillainf{
+	height:300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-evenly;
+}
+/*Grilla Semillas*/  
+
+.cuerpo{
+	display: grid;
+	grid-template-areas:
+     "nav s01 s02 s03"
+     "nav s04 s05 s06"
+     "nav s07 s08 s09";
+	grid-template-rows: repeat(3,150px); 
+	grid-template-columns: repeat(4,200px);
+	grid-row-gap: 20px;
+	grid-column-gap: 120px;
+	width: 1000px;
+	height: 500px;
+	margin-top: -40px;
+	margin-left: 40px;
+	justify-items: center;
+	align-items: center;
+}
+
+.imgs01,.imgs02,.imgs03,.imgs04,.imgs05,.imgs06,.imgs07,.imgs08,.imgs09,
+.img01,.img02,.img03,.img04,.img05,.img06,.img07,.img08,.img09{
+	height: 120px;
+	transition: height 0.6s;
+}
+
+.imgs01:hover,.imgs02:hover,.imgs03:hover,.imgs04:hover,.imgs05:hover,.imgs06:hover,.imgs07:hover,.imgs08:hover,.imgs09:hover,
+.img01:hover,.img02:hover,.img03:hover,.img04:hover,.img05:hover,.img06:hover,.img07:hover,.img08:hover,.img09:hover{
+	height: 150px;
+}
+
+
+.menu{
+	grid-area: nav;
+	margin-left: 0px;
+}
+
+.imgs01 {
+	grid-area: s01;
+}
+.imgs02 {
+	grid-area: s02;
+}
+.imgs03 {
+	grid-area: s03;
+}
+.imgs04 {
+	grid-area: s04;
+}
+.imgs05 {
+	grid-area: s05;
+}
+.imgs06 {
+	grid-area: s06;
+}
+.imgs07 {
+	grid-area: s07;
+}
+.imgs08 {
+	grid-area: s08;
+}
+.imgs09 {
+	grid-area: s09;
+}
+
+
+ 
+
+
+/* Footer */
+footer{
+	margin-top: -40px;
+	height: 60px;
+	background-image: linear-gradient(to top, rgba(0, 92, 29, 0.6) , rgba(125, 161, 126, 0))
+	/*background-image: radial-gradient( #005c1d , rgba(125, 161, 126, 0));*/
+}
+
+#cuore{
+	height: 40px;
+	margin-top: 10px;
+	float:right; 
+   	animation-name: animarcuore;
+  	animation-iteration-count: infinite;
+   	animation-timing-function: ease-in;
+   	animation-duration: 2s;
+   	animation-delay: 0s;
+}
+@keyframes animarcuore {
+	0%{ width: 40px;height: 40px }
+	50%{ width: 45px;height: 45px }
+    100%{ width: 40px;height: 40px}
+}
+
+.copy{
+	font-size: 20px;
+	margin-top: 20px;
+	float:right; 
+}
