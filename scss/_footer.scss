@@ -1,0 +1,30 @@
+/* Footer */
+footer{
+	margin-top: -40px;
+	height: 60px;
+	background-image: linear-gradient(to top, rgba(0, 92, 29, 0.6) , rgba(125, 161, 126, 0))
+	/*background-image: radial-gradient( #005c1d , rgba(125, 161, 126, 0));*/
+}
+
+#cuore{
+	height: 40px;
+	margin-top: 10px;
+	float:right; 
+   	animation-name: animarcuore;
+  	animation-iteration-count: infinite;
+   	animation-timing-function: ease-in;
+   	animation-duration: 2s;
+   	animation-delay: 0s;
+}
+@keyframes animarcuore {
+	0%{ width: 40px;height: 40px }
+	50%{ width: 45px;height: 45px }
+    100%{ width: 40px;height: 40px}
+}
+
+.copy{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-right: 30px;
+	float:right; 
+}

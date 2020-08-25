@@ -1,0 +1,24 @@
+/* generales */
+body {
+	background-image:url("../imagenes/fondo.jpg"); 
+}
+
+.enLinea{display: inline-block;}
+
+.verde {
+	color: #005c1d;/*rgba(0, 92, 29, 0)*/
+}
+.verdolaga{
+	color: #7da17e;/*rgba(125, 161, 126, 0)*/
+}
+
+@media (max-width: 576px) {
+	body {
+		background-image:none; 
+		}
+	.titulo,.subtitulo {
+		display:none
+	}
+}
+
+
