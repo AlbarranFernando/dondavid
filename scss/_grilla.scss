@@ -65,15 +65,30 @@ form{
 
 /*Grilla Semillasl, Frutas*/  
 
-.grilla{
+.imgri{
 	height: 120px;
 	width: 120px;
-	transition: 0.6s;	
+	transition: 0.6s;
 }
-.grilla:hover{
-	height: 140px;	
-	width: 140px;
-	opacity:0;
+.textgri{
+	font-size:1.5rem;
+	justify-content: center;
+	position: absolute;
+	top: 10px;
+    left: 50px;
+    opacity:0;
+    transition: 0.6s;
+}
+.itgri{
+	position: relative;
+}
+.itgri:hover{
+.imgri{
+		height: 140px;
+		width: 140px;
+		opacity:0.5;}
+.textgri{
+    opacity:1;}		
 }
 .grilla__columnah{
 	height: 140px;
