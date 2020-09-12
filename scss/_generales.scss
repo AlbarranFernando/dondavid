@@ -3,11 +3,22 @@ body {
 	background-image:url("../imagenes/fondo.jpg"); 
 }
 .enLinea{display: inline-block;}
-.parr{
+.parrp{
 	font-size:1.5rem;
+	justify-content: center;
+	font-family: 'Arial Narrow', cursive;
+	margin-top:5px;
+	}
+.parr{
+	font-size:1.3rem;
 	//text-align: center;
 	justify-content: center;
 	//height: 82px;	
+}
+.parlar{
+	font-size:1rem;
+	height: 25rem;
+    overflow: auto;
 }
 .verde {
 	color: #005c1d;/*rgba(0, 92, 29, 0)*/
