@@ -8,17 +8,19 @@ body {
 .parrp {
   font-size: 1.5rem;
   justify-content: center;
-  font-family: 'Arial Narrow', cursive;
+  font-family: 'Lobster', cursive;
   margin-top: 5px; }
 
 .parr {
   font-size: 1.3rem;
-  justify-content: center; }
+  justify-content: center;
+  font-family: 'Lobster', cursive; }
 
 .parlar {
-  font-size: 1rem;
+  font-size: 1.2rem;
   height: 25rem;
-  overflow: auto; }
+  overflow: auto;
+  font-family: 'Lobster', cursive; }
 
 .verde {
   color: #005c1d;
@@ -28,11 +30,16 @@ body {
   color: #7da17e;
   /*rgba(125, 161, 126, 0)*/ }
 
-@media (max-width: 576px) {
-  body {
-    background-image: none; }
+@media (max-width: 1000px) {
   .titulo, .subtitulo {
-    display: none; } }
+    font-size: 2rem !important; }
+  .logo {
+    width: 200px !important;
+    height: 100px !important; }
+  .imgri {
+    height: 70px !important;
+    width: 70px !important;
+    transition: 0.6s; } }
 
 /* header */
 .logo {
@@ -45,7 +52,6 @@ body {
   justify-content: center;
   background-color: rgba(255, 166, 0, 0.5);
   margin-top: 27px;
-  height: 82px;
   border: 5px solid #7b8a00;
   border-radius: 20px; }
 
@@ -171,7 +177,7 @@ form {
 footer {
   margin-top: -40px;
   height: 60px;
-  background-image: linear-gradient(to top, rgba(0, 92, 29, 0.6), rgba(125, 161, 126, 0)); }
+  background-image: linear-gradient(to top, #005c1d, rgba(125, 161, 126, 0)); }
 
 #cuore {
   height: 40px;
